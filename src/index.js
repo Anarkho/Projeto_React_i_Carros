@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Favicon from 'react-favicon'
+import Icon from '../public/favicon.jpeg'
 
 import App from './App';
 
@@ -9,6 +11,7 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <>
+   <Favicon url={Icon}/>
     <App/>
   </>
 );
