@@ -49,7 +49,7 @@ module.exports = merge(common, {
       filename: 'main-bundle-[hash].css',
     }),
     new FaviconsWebpackPlugin({
-      logo: './public/favicon.jpeg',
+      logo: './public/favicon.ico',
       outputPath: 'img',
     }),
   ],

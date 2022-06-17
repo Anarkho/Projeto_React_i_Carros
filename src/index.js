@@ -1,17 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 import Favicon from 'react-favicon'
-import Icon from '../public/favicon.jpeg'
+import Icon from '../public/favicon.ico'
 
-import App from './App';
+import App from './App'
 
-const root = ReactDOM.createRoot(
-  document.getElementById('main')
-);
+const root = ReactDOM.createRoot(document.getElementById('main'))
 
 root.render(
   <>
-   <Favicon url={Icon}/>
-    <App/>
+    <Favicon url={Icon} />
+    <App />
   </>
-);
+)
