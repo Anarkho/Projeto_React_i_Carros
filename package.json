@@ -55,8 +55,7 @@
     "styled-components": "^5.3.5"
   },
   "husky": {
-    "pre-commit": "lint-staged",
-    "pre-push": ""
+    "pre-commit": "lint-staged"
   },
   "lint-staged": {
     "*.js|jsx": [
