@@ -50,23 +50,23 @@ const Footer = () => {
           <div class="menu">
             <ul>
               <li>
-                <a href="#">Loren ipsum</a>
+                <Link to="#">Loren ipsum</Link>
               </li>
 
               <li>
-                <a href="#">Loren ipsum</a>
+                <Link to="#">Loren ipsum</Link>
               </li>
 
               <li>
-                <a href="#">Loren ipsum</a>
+                <Link to="#">Loren ipsum</Link>
               </li>
 
               <li>
-                <a href="#">Loren ipsum</a>
+                <Link to="#">Loren ipsum</Link>
               </li>
 
               <li>
-                <a href="#">Loren ipsum</a>
+                <Link to="#">Loren ipsum</Link>
               </li>
             </ul>
           </div>
@@ -78,23 +78,23 @@ const Footer = () => {
           <div class="menu">
             <ul>
               <li>
-                <a href="#">Loren ipsum</a>
+                <Link to="#">Loren ipsum</Link>
               </li>
 
               <li>
-                <a href="#">Loren ipsum</a>
+                <Link to="#">Loren ipsum</Link>
               </li>
 
               <li>
-                <a href="#">Loren ipsum</a>
+                <Link to="#">Loren ipsum</Link>
               </li>
 
               <li>
-                <a href="#">Loren ipsum</a>
+                <Link to="#">Loren ipsum</Link>
               </li>
 
               <li>
-                <a href="#">Loren ipsum</a>
+                <Link to="#">Loren ipsum</Link>
               </li>
             </ul>
           </div>
@@ -106,19 +106,19 @@ const Footer = () => {
           <div class="menu">
             <ul>
               <li>
-                <a href="#">Loren ipsum</a>
+                <Link to="#">Loren ipsum</Link>
               </li>
 
               <li>
-                <a href="#">Loren ipsum</a>
+                <Link to="#">Loren ipsum</Link>
               </li>
 
               <li>
-                <a href="#">Loren ipsum</a>
+                <Link to="#">Loren ipsum</Link>
               </li>
 
               <li>
-                <a href="#">Loren ipsum</a>
+                <Link to="#">Loren ipsum</Link>
               </li>
             </ul>
           </div>
@@ -126,33 +126,33 @@ const Footer = () => {
 
         <section class="contacts-social">
           <div class="contacts">
-            <a id="phone" href="fone:+551111111111">
+            <Link id="phone" to="fone:+551111111111">
               <img src={IconeTelefone} alt="icone telefone" />
               (11) 1111-1111
-            </a>
+            </Link>
 
-            <a id="email" href="mailto:email@example.com.br">
+            <Link id="email" to="mailto:email@example.com.br">
               <img src={IconeEmail} alt="icone email" />
               email@example.com.br
-            </a>
+            </Link>
           </div>
 
           <div class="social">
-            <a id="facebook" href="#">
+            <Link id="facebook" to="#">
               <img src={LogoFacebook} alt="logo facebook" />
-            </a>
+            </Link>
 
-            <a id="twitter" href="#">
+            <Link id="twitter" to="#">
               <img src={LogoTwitter} alt="logo twitter" />
-            </a>
+            </Link>
 
-            <a id="telegram" href="#">
+            <Link id="telegram" to="#">
               <img src={LogoTelegram} alt="logo telegram" />
-            </a>
+            </Link>
 
-            <a id="telegram" href="#">
+            <Link id="telegram" to="#">
               <img src={LogoMesseger} alt="logo messeger" />
-            </a>
+            </Link>
           </div>
         </section>
       </div>
@@ -163,8 +163,8 @@ const Footer = () => {
         </p>
 
         <div class="menu-secondary">
-          <a href="#">Termos de uso</a>
-          <a href="#">Política de privacidade</a>
+          <Link to="#">Termos de uso</Link>
+          <Link to="#">Política de privacidade</Link>
         </div>
       </div>
     </Container>
