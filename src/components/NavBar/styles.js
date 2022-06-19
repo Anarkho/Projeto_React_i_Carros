@@ -6,6 +6,7 @@ export const Container = styled.nav`
   width: 80vw;
   align-items: center;
   background-color: #1f1b2d;
+  font-size: 0.8rem;
 
   .link-logo {
     margin: 0px 20px;
@@ -48,10 +49,11 @@ export const Container = styled.nav`
       background-color: #fd5631;
       color: #f9f8fa;
       width: 11rem;
-      height: 3rem;
+      height: 2.5rem;
       border-radius: 10px;
-      font-size: 1.3rem;
+      font-size: 1rem;
       margin-left: 20px;
+      border: none;
 
       &:hover {
         cursor: pointer;
