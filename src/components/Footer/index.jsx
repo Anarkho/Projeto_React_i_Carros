@@ -31,7 +31,7 @@ const Footer = () => {
       <hr />
       <div class="footer-informations">
         <div class="subscribe">
-          <h2>Cadastre-se na newletter</h2>
+          <h2>Cadastre-se na newsletter</h2>
 
           <p>Não perca nenhuma oferta relevante!</p>
 
