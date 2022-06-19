@@ -70,8 +70,7 @@ export const Container = styled.footer`
       height: 39px !important;
 
       &:active {
-        border: 1px solid #fd3131;
-        border-radius: 10px;
+        opacity: 0.4;
       }
     }
     /*=== .subscribe ===*/
