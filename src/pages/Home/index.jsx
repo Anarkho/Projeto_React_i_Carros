@@ -6,13 +6,16 @@ import Footer from '@/components/Footer'
 
 import { menuItem } from '@/Constants'
 import { Header } from '@/components/Header'
+import Types from '@/components/Types'
 
 const Home = () => {
   return (
     <Container>
       <NavBar item={menuItem} />
       <Header />
-      <h1>Home</h1>
+      <main>
+        <Types />
+      </main>
       <Footer />
     </Container>
   )
