@@ -127,7 +127,7 @@ export const Container = styled.header`
     border-radius: 0.6rem;
     opacity: 1;
     color: #fefcff;
-    margin-right: 5px;
+    margin-right: 8px;
   }
 
   & .input-group #submit:hover {
