@@ -195,7 +195,6 @@ export const Container = styled.section`
   }
   .card-right {
     display: flex;
-    border: solid 1px white;
     & img {
       border-radius: 1.2rem 0rem 0rem 1.2rem;
     }
@@ -228,7 +227,6 @@ export const Container = styled.section`
       line-height: 1;
     }
     .right-info {
-      border: solid 1px red;
       margin-left: 200px;
 
       .compare-info {
