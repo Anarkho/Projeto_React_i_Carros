@@ -7,6 +7,7 @@ import BlueCar from '@/assets/img/home/top-offers/blue-car.png'
 import Dashboard from '@/assets/img/home/top-offers/dashboard.svg'
 import Transmission from '@/assets/img/home/top-offers/transmission.svg'
 import Fuel from '@/assets/img/home/top-offers/fuel.svg'
+import Core from '@/assets/img/home/top-offers/core.svg'
 import Pin from '@/assets/img/home/footer/pin.svg'
 
 const TopOffers = () => {
@@ -69,7 +70,7 @@ const TopOffers = () => {
               <img src={GreenCar} alt="car green" width={243} />
               <span style={{ backgroundColor: '#3c76f3' }}>Used</span>
               <div class="right-info">
-                <img class="img-coracao" src="" alt="a" />
+                <img class="img-coracao" src={Core} alt="a" />
                 <div class="compare-info">
                   <p>1994</p>
                   <input type="checkbox" />

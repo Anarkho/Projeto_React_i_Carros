@@ -218,7 +218,7 @@ export const Container = styled.section`
       position: relative;
       top: 0;
       margin-top: 5px;
-      margin-left: -81px;
+      margin-left: -91px;
       height: 15px;
       padding: 3px;
       border-radius: 5px;
