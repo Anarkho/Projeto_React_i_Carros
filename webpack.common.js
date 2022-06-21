@@ -1,5 +1,6 @@
 const path = require('path')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const Dotenv = require('dotenv-webpack')
 
 module.exports = {
   entry: './src/index.js', // arquivo principal
@@ -18,5 +19,6 @@ module.exports = {
   plugins: [
     // plugins que serão usadas no common
     new CleanWebpackPlugin(),
+    new Dotenv(),
   ],
 }
