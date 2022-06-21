@@ -7,6 +7,7 @@ import Footer from '@/components/Footer'
 import { menuItem } from '@/Constants'
 import { Header } from '@/components/Header'
 import Types from '@/components/Types'
+import TopOffers from '@/components/TopOffers'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Header />
       <main>
         <Types />
+        <TopOffers />
       </main>
       <Footer />
     </Container>
