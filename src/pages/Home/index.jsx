@@ -8,6 +8,7 @@ import { menuItem } from '@/Constants'
 import { Header } from '@/components/Header'
 import Types from '@/components/Types'
 import TopOffers from '@/components/TopOffers'
+import Brands from '@/components/Logos'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <main>
         <Types />
         <TopOffers />
+        <Brands />
       </main>
       <Footer />
     </Container>

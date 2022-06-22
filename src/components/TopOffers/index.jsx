@@ -68,7 +68,7 @@ const TopOffers = () => {
           <div class="card-horizontal-up card-horizontal-hover">
             <div class="card-right">
               <img src={GreenCar} alt="car green" width={243} />
-              <span style={{ backgroundColor: '#3c76f3' }}>Used</span>
+              <span style={{ backgroundColor: '#3c76f3' }}>Usado</span>
               <div class="right-info">
                 <img class="img-coracao" src={Core} alt="a" />
                 <div class="compare-info">
@@ -83,7 +83,7 @@ const TopOffers = () => {
           <div class="card-horizontal-down card-horizontal-hover">
             <div class="card-right">
               <img src={BlueCar} alt="car green" width={243} />
-              <span style={{ backgroundColor: '#feba33' }}>New</span>
+              <span style={{ backgroundColor: '#feba33' }}>Novo</span>
             </div>
           </div>
         </div>
