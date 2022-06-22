@@ -9,6 +9,7 @@ import { Header } from '@/components/Header'
 import Types from '@/components/Types'
 import TopOffers from '@/components/TopOffers'
 import Brands from '@/components/Logos'
+import Features from '@/components/Features'
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         <Types />
         <TopOffers />
         <Brands />
+        <Features />
       </main>
       <Footer />
     </Container>
