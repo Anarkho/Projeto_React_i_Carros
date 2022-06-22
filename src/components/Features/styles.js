@@ -30,7 +30,6 @@ export const Container = styled.div`
     width: 25.6rem;
     height: 2.4rem;
     right: 0;
-
     display: flex;
     align-items: center;
     opacity: 0.7;
@@ -96,6 +95,7 @@ export const Container = styled.div`
 
     a {
       text-decoration: none;
+      color: #d5d2dc;
     }
   }
 
