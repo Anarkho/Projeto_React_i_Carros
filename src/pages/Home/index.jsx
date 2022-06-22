@@ -10,6 +10,7 @@ import Types from '@/components/Types'
 import TopOffers from '@/components/TopOffers'
 import Brands from '@/components/Logos'
 import Features from '@/components/Features'
+import Banners from '@/components/Banners'
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
         <TopOffers />
         <Brands />
         <Features />
+        <Banners />
       </main>
       <Footer />
     </Container>

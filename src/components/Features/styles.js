@@ -48,8 +48,8 @@ export const Container = styled.div`
       margin-left: 273px;
       margin-bottom: 10px;
     }
-    p{
-        margin-bottom: 20px;
+    p {
+      margin-bottom: 20px;
     }
   }
 
@@ -59,14 +59,10 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    p
-
   }
 
   /* auto */
   .auto-road {
-    height: 100%;
     margin-top: -60%;
     display: flex;
     flex-direction: column;
