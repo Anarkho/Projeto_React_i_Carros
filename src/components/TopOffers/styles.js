@@ -52,7 +52,7 @@ export const Container = styled.section`
 
   /* car-card/vertical */
   & .card-vertical-left {
-    width: 550px;
+    width: 500px;
     height: 27.5rem;
 
     border-radius: 1.2rem;
@@ -62,7 +62,7 @@ export const Container = styled.section`
       0px 4px 16px rgba(31, 27, 45, 0.12);
 
     & img {
-      width: 550px;
+      width: 500px;
       height: 13rem;
       border-radius: 1.2rem 1.2rem 0rem 0rem;
     }
@@ -74,7 +74,7 @@ export const Container = styled.section`
 
   /* cards-left*/
   .top-offers .cards-right {
-    width: 500px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -84,7 +84,7 @@ export const Container = styled.section`
 
   /* card-horizontal-up */
   .card-horizontal-up {
-    width: 645px;
+    width: 570px;
     height: 13rem;
     margin-bottom: 1.5rem;
     margin-left: 4px;
@@ -97,7 +97,7 @@ export const Container = styled.section`
 
   /* card-horizontal-down */
   .card-horizontal-down {
-    width: 645px;
+    width: 570px;
     height: 13rem;
     border-radius: 1.2rem;
     background: rgba(255, 255, 255, 0.04);
@@ -239,7 +239,7 @@ export const Container = styled.section`
         }
 
         input[type='checkbox'] {
-          margin-left: 275px;
+          margin-left: 205px;
           margin-top: -23px;
         }
       }
