@@ -126,33 +126,33 @@ const Footer = () => {
 
         <section class="contacts-social">
           <div class="contacts">
-            <Link id="phone" to="fone:+551111111111">
+            <a id="phone" href="fone:+551111111111">
               <img src={IconeTelefone} alt="icone telefone" />
               (11) 1111-1111
-            </Link>
+            </a>
 
-            <Link id="email" to="mailto:email@example.com.br">
+            <a id="email" href="mailto:email@example.com.br">
               <img src={IconeEmail} alt="icone email" />
               email@example.com.br
-            </Link>
+            </a>
           </div>
 
           <div class="social">
-            <Link id="facebook" to="#">
+            <a id="facebook" href="#">
               <img src={LogoFacebook} alt="logo facebook" />
-            </Link>
+            </a>
 
-            <Link id="twitter" to="#">
+            <a id="twitter" href="#">
               <img src={LogoTwitter} alt="logo twitter" />
-            </Link>
+            </a>
 
-            <Link id="telegram" to="#">
+            <a id="telegram" href="#">
               <img src={LogoTelegram} alt="logo telegram" />
-            </Link>
+            </a>
 
-            <Link id="telegram" to="#">
+            <a id="telegram" href="#">
               <img src={LogoMesseger} alt="logo messeger" />
-            </Link>
+            </a>
           </div>
         </section>
       </div>

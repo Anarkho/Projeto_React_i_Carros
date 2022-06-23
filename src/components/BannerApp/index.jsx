@@ -29,21 +29,17 @@ const BannerApp = () => {
           </div>
 
           <div class="btns">
-            <Link
+            <a
               id="app-store"
-              to="https://www.apple.com/br/app-store/"
+              href="https://www.apple.com/br/app-store/"
               target="_blank"
             >
               <img src={AppleStore} alt="apple store" />
-            </Link>
+            </a>
 
-            <Link
-              id="google-play"
-              to="https://play.google.com/"
-              target="_blank"
-            >
+            <a id="google-play" href="https://play.google.com/" target="_blank">
               <img src={GooglePlay} alt="" />
-            </Link>
+            </a>
           </div>
         </div>
 
