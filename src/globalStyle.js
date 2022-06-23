@@ -9,10 +9,16 @@ const GlobalStyle = createGlobalStyle`
   body {
     display: flex;
     flex-direction: column;
+    width: 100vw;
     align-items: center;
     height: 100vh ;
     background-color: #1f1b2d;
-    box-sizing: border-box ;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+    main{
+      width: 80vw;
+    }
   }
 `
 

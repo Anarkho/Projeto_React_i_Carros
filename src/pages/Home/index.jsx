@@ -11,6 +11,7 @@ import TopOffers from '@/components/TopOffers'
 import Brands from '@/components/Logos'
 import Features from '@/components/Features'
 import Banners from '@/components/Banners'
+import BannerApp from '@/components/BannerApp'
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
         <Brands />
         <Features />
         <Banners />
+        <BannerApp />
       </main>
       <Footer />
     </Container>

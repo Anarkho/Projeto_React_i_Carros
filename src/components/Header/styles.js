@@ -1,14 +1,19 @@
 import styled from 'styled-components'
 
 export const Container = styled.header`
-  width: 100%;
-  height: 77.3rem;
+  width: inherit;
+  height: 40.3rem;
+  justify-content: space-between;
 
   & .text-img {
+    width: inherit;
     margin-top: 7rem;
     display: flex;
     justify-content: center;
-    width: 100%;
+  }
+
+  & .h1-p {
+    width: 46%;
   }
 
   & .text-img h1 {

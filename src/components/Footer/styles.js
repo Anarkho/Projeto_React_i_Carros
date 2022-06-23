@@ -3,7 +3,8 @@ import styled from 'styled-components'
 export const Container = styled.footer`
   display: flex;
   flex-direction: column;
-  width: 124.14%;
+  width: 128%;
+  margin-left: -12%;
   align-items: center;
   background-color: #272236;
   font-size: 0.8rem;

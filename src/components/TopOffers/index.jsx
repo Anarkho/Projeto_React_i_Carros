@@ -12,7 +12,7 @@ import Pin from '@/assets/img/home/footer/pin.svg'
 
 const TopOffers = () => {
   return (
-    <Container class="top-offers">
+    <Container>
       <div class="top-offers-top">
         <h2>Ofertas</h2>
 

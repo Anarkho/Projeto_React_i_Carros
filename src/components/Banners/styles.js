@@ -1,15 +1,16 @@
 import styled from 'styled-components'
 
 export const Container = styled.section`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 110%;
-  height: 30vh !important;
-  margin-left: -50px;
-  background: rgba(255, 255, 255, 0.04);
-  border-radius: 12px;
-  margin-bottom: 40px;
+  .banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: inherit;
+    height: 30vh !important;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 12px;
+    margin-bottom: 40px;
+  }
 
   .banner-top-right {
     width: 250px;

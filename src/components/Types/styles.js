@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
 export const Container = styled.section`
-  margin-top: -550px;
+  margin-top: 0px;
+  width: inherit;
   .types {
     display: flex;
     flex-direction: column;
@@ -17,7 +18,6 @@ export const Container = styled.section`
   /* types-top */
   .types-top {
     display: flex;
-    margin: 0px -48px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;

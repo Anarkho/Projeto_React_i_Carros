@@ -2,16 +2,10 @@ import styled from 'styled-components'
 
 export const Container = styled.section`
   margin-bottom: 20px;
-  width: 110%;
-  margin-left: -4rem;
-  .top-offers {
-    width: 124%;
-    height: 57rem;
-  }
+  width: inherit;
 
   .top-offers-top {
-    width: 100%;
-
+    width: inherit;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,7 +38,6 @@ export const Container = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     width: 13.3rem;
     height: 2.4rem;
 
@@ -59,8 +52,8 @@ export const Container = styled.section`
 
   /* car-card/vertical */
   & .card-vertical-left {
-    width: 600px;
-    height: 29rem;
+    width: 550px;
+    height: 27.5rem;
 
     border-radius: 1.2rem;
 
@@ -69,8 +62,8 @@ export const Container = styled.section`
       0px 4px 16px rgba(31, 27, 45, 0.12);
 
     & img {
-      width: 600px;
-      height: 15rem;
+      width: 550px;
+      height: 13rem;
       border-radius: 1.2rem 1.2rem 0rem 0rem;
     }
   }
@@ -91,10 +84,10 @@ export const Container = styled.section`
 
   /* card-horizontal-up */
   .card-horizontal-up {
-    width: 500px;
-    height: 14rem;
-    margin-bottom: 1rem;
-    margin-left: -20px;
+    width: 645px;
+    height: 13rem;
+    margin-bottom: 1.5rem;
+    margin-left: 4px;
     border-radius: 1.2rem;
     background: rgba(255, 255, 255, 0.04);
 
@@ -104,11 +97,11 @@ export const Container = styled.section`
 
   /* card-horizontal-down */
   .card-horizontal-down {
-    width: 500px;
-    height: 14rem;
+    width: 645px;
+    height: 13rem;
     border-radius: 1.2rem;
     background: rgba(255, 255, 255, 0.04);
-    margin-left: -20px;
+    margin-left: 4px;
     box-shadow: 0px 4px 12px -6px rgba(31, 27, 45, 0.2),
       0px 8px 16px rgba(31, 27, 45, 0.16);
   }
@@ -123,11 +116,11 @@ export const Container = styled.section`
 
     .pin-offers {
       width: 20px !important;
-      margin-top: -110px;
+      margin-top: -91px;
       margin-left: 5px;
     }
     .region {
-      margin-top: -128px;
+      margin-top: -112px;
       margin-left: 28px;
       color: #d5d2dc;
       font-weight: 350;
@@ -146,11 +139,11 @@ export const Container = styled.section`
   .dash {
     margin-top: 10px;
     display: flex;
-    width: 160px;
+    width: 140px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: #1f1b2c;
     height: 70px;
     border-radius: 1.2rem;
 
@@ -187,7 +180,7 @@ export const Container = styled.section`
   }
 
   hr {
-    margin-top: 15px;
+    margin-top: 18px;
     margin-left: 10px;
     width: 96%;
     border-bottom: none;
@@ -195,7 +188,9 @@ export const Container = styled.section`
   }
   .card-right {
     display: flex;
+
     & img {
+      height: 13rem;
       border-radius: 1.2rem 0rem 0rem 1.2rem;
     }
     span {
@@ -235,17 +230,17 @@ export const Container = styled.section`
         width: 230px;
 
         p {
-          margin: 11px -40px;
+          margin: -23px -40px;
           font-weight: 300;
         }
         span {
           margin-left: 14px;
-          margin-top: 10px;
+          margin-top: -23px;
         }
 
         input[type='checkbox'] {
-          margin-left: 146px;
-          margin-top: 14px;
+          margin-left: 275px;
+          margin-top: -23px;
         }
       }
     }

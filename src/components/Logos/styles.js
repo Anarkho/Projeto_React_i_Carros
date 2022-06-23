@@ -1,12 +1,11 @@
 import styled from 'styled-components'
 
 export const Container = styled.section`
-  width: 110%;
+  width: inherit;
   height: 4.8rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: -70px;
   margin-top: 4rem;
   margin-bottom: 4rem;
 

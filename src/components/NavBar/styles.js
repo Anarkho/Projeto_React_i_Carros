@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.nav`
   display: flex;
   height: 10vh;
-  width: 80vw;
+  width: inherit;
   align-items: center;
   background-color: #1f1b2d;
   font-size: 0.8rem;
