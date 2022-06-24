@@ -28,11 +28,12 @@ const TopOffers = () => {
 
           <div class="info">
             <div class="ano-compare">
-              <span>2014</span>
-              <div>
-                <input type="checkbox" />
+              <p>1994</p>
+              <label class="check">
                 <span>Compare</span>
-              </div>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
             </div>
             <p>Mercedes Benz Convertible Coupe</p>
             <p class="price">$ 25,880</p>
@@ -73,8 +74,11 @@ const TopOffers = () => {
                 <img class="img-coracao" src={Core} alt="a" />
                 <div class="compare-info">
                   <p>1994</p>
-                  <input type="checkbox" />
-                  <span>Compare</span>
+                  <label class="check">
+                    <span>Compare</span>
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
                 </div>
               </div>
             </div>

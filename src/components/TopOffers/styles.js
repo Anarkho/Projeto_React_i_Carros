@@ -161,13 +161,79 @@ export const Container = styled.section`
     justify-content: space-between;
 
     & label,
-    span {
+    span,
+    p {
       color: #fefcff;
       font-weight: 200;
       margin: 0px 10px;
     }
     & input {
       background-color: #555 !important;
+    }
+    .check {
+      display: block;
+      position: relative;
+      padding-left: 24px;
+      cursor: pointer;
+      font-size: 14px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .check p {
+      padding-top: 1px;
+    }
+
+    .check input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 14px;
+      width: 14px;
+      background-color: transparent;
+      border: 1px solid #d5d2dc;
+      border-radius: 20%;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .check:hover input ~ .checkmark {
+      background-color: #ccc;
+    }
+
+    .check input:checked ~ .checkmark {
+      background-color: #fd5631;
+    }
+
+    .checkmark:after {
+      content: '';
+      position: absolute;
+      display: none;
+    }
+
+    .check input:checked ~ .checkmark:after {
+      display: block;
+    }
+
+    .check .checkmark:after {
+      left: 5px;
+      top: 1px;
+      width: 2px;
+      height: 7px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
     }
   }
 
