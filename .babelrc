@@ -1,5 +1,5 @@
 {
-  "presets": ["@babel/preset-env", "@babel/preset-react"], // imterpretar sintaxe jsx react e variaveis de ambiente
+  "presets": ["@babel/preset-env", "@babel/preset-react"], // interpretar sintaxe jsx react e variaveis de ambiente
   "env": {
     "development": {
       "presets": [["@babel/preset-react", { "development": true }]]

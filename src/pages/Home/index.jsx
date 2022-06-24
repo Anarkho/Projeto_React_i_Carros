@@ -12,6 +12,7 @@ import Brands from '@/components/Logos'
 import Features from '@/components/Features'
 import Banners from '@/components/Banners'
 import BannerApp from '@/components/BannerApp'
+import Blog from '@/components/Blog'
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
         <Features />
         <Banners />
         <BannerApp />
+        <Blog />
       </main>
       <Footer />
     </Container>
