@@ -9,6 +9,7 @@ import Transmission from '@/assets/img/home/top-offers/transmission.svg'
 import Fuel from '@/assets/img/home/top-offers/fuel.svg'
 import Core from '@/assets/img/home/top-offers/core.svg'
 import Pin from '@/assets/img/home/footer/pin.svg'
+import After from '@/assets/img/home/apps/previous.png'
 
 const TopOffers = () => {
   return (
@@ -23,71 +24,115 @@ const TopOffers = () => {
       </div>
 
       <div class="top-offers-down">
-        <div class="card-vertical-left card-horizontal-hover">
-          <img src={WhiteCar} alt="car" />
-
-          <div class="info">
-            <div class="ano-compare">
+        <div className="card-left-vertical">
+          <img className="setas" src={After} alt="seta esquerda" />
+          <img className="setas" src={After} alt="seta direita" />
+          <img src={WhiteCar} alt="white car" />
+          <div className="card-left-down-infos">
+            <div className="ano-compare">
               <p>1994</p>
               <label class="check">
-                <span>Compare</span>
+                <p>Compare</p>
                 <input type="checkbox" />
                 <span class="checkmark"></span>
               </label>
             </div>
-            <p>Mercedes Benz Convertible Coupe</p>
-            <p class="price">$ 25,880</p>
-            <img class="pin-offers" src={Pin} alt="ponteiro localização" />
-            <span class="region">São Paulo</span>
-          </div>
-          <hr />
-          <div class="especification">
-            <div class="dash">
-              <img
-                class="dashboard"
-                src={Dashboard}
-                alt="painel de kilometragem"
-              />
-              <p>48k mi</p>
-            </div>
-            <div class="dash">
-              <img
-                class="dashboard"
-                src={Transmission}
-                alt="painel de kilometragem"
-              />
-              <p>Automatic</p>
-            </div>
-            <div class="dash">
-              <img class="dashboard" src={Fuel} alt="painel de kilometragem" />
-              <p>Petrol</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="cards-right">
-          <div class="card-horizontal-up card-horizontal-hover">
-            <div class="card-right">
-              <img src={GreenCar} alt="car green" width={243} />
-              <span style={{ backgroundColor: '#3c76f3' }}>Usado</span>
-              <div class="right-info">
-                <img class="img-coracao" src={Core} alt="a" />
-                <div class="compare-info">
-                  <p>1994</p>
-                  <label class="check">
-                    <span>Compare</span>
-                    <input type="checkbox" />
-                    <span class="checkmark"></span>
-                  </label>
+            <div className="especification">
+              <h3>Mercedes Benz Convertible Coupe</h3>
+              <p className="price">$25,880</p>
+              <div className="location">
+                <img src={Pin} alt="ponteiro" />
+                <p>São paulo</p>
+              </div>
+              <hr />
+              <div className="info-car">
+                <div>
+                  <img src={Dashboard} alt="" />
+                  <p>48k mi</p>
+                </div>
+                <div>
+                  <img src={Transmission} alt="" />
+                  <p>Automatic</p>
+                </div>
+                <div>
+                  <img src={Fuel} alt="" />
+                  <p>Petrol</p>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="card-horizontal-down card-horizontal-hover">
-            <div class="card-right">
-              <img src={BlueCar} alt="car green" width={243} />
-              <span style={{ backgroundColor: '#feba33' }}>Novo</span>
+        </div>
+        <div className="card-right-vertical">
+          <div className="card-right-up">
+            <img src={GreenCar} alt="green car" />
+            <div className="card-right-up-infos">
+              <div className="ano-compare">
+                <p>1995</p>
+                <label class="check">
+                  <p>Compare</p>
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div className="especification">
+                <h3>Ford Truck Lifted</h3>
+                <p className="price">$24,000</p>
+                <div className="location">
+                  <img src={Pin} alt="ponteiro" />
+                  <p>Chicago</p>
+                </div>
+                <hr />
+                <div className="info-car">
+                  <div>
+                    <img src={Dashboard} alt="" />
+                    <p>275k mi</p>
+                  </div>
+                  <div>
+                    <img src={Transmission} alt="" />
+                    <p>Manual</p>
+                  </div>
+                  <div>
+                    <img src={Fuel} alt="" />
+                    <p>Diesel</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="card-right-down">
+            <img src={BlueCar} alt=" blue car" />
+            <div className="card-right-down-infos">
+              <div className="ano-compare">
+                <p>2020</p>
+                <label class="check">
+                  <p>Compare</p>
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div className="especification">
+                <h3>Mercedes Benz C300 Sport</h3>
+                <p className="price">$54,420</p>
+                <div className="location">
+                  <img src={Pin} alt="ponteiro" />
+                  <p>San Francisco</p>
+                </div>
+                <hr />
+                <div className="info-car">
+                  <div>
+                    <img src={Dashboard} alt="" />
+                    <p>No mileage</p>
+                  </div>
+                  <div>
+                    <img src={Transmission} alt="" />
+                    <p>Automatic</p>
+                  </div>
+                  <div>
+                    <img src={Fuel} alt="" />
+                    <p>Hybrid</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
