@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { Container } from './styles'
 import Arrow from '@/assets/img/home/types/arrow.svg'
-import { mercedes } from '../../../public/automoveis'
+import { mercedes } from '../../assets/img/home/top-offers/automoveis'
 import GreenCar from '@/assets/img/home/top-offers/green-car.png'
 import BlueCar from '@/assets/img/home/top-offers/blue-car.png'
 import Dashboard from '@/assets/img/home/top-offers/dashboard.svg'
