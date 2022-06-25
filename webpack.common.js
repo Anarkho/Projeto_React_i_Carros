@@ -6,7 +6,7 @@ module.exports = {
   entry: './src/index.js', // arquivo principal
   output: {
     // saida dos arquivos de build
-    path: path.join(__dirname, 'public'), // pasta de saida dos arquivos
+    path: path.join(__dirname, 'dist'), // pasta de saida dos arquivos
     filename: 'main-bundle-[hash].js', // gera dinamicamente arquivo javascript legivel
     publicPath: '/', // interpreta os estão os arquivos publicos
   },
