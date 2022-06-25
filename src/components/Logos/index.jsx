@@ -16,7 +16,7 @@ import { Container } from './styles'
 
 const Brands = () => {
   return (
-    <Container class="logos">
+    <Container className="logos">
       <Link to="">
         <img src={Opel} alt="logo opel" />
       </Link>

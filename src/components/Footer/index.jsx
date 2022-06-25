@@ -29,13 +29,13 @@ const Footer = () => {
         </div>
       </div>
       <hr />
-      <div class="footer-informations">
-        <div class="subscribe">
+      <div className="footer-informations">
+        <div className="subscribe">
           <h2>Cadastre-se na newsletter</h2>
 
           <p>Não perca nenhuma oferta relevante!</p>
 
-          <div class="input-group">
+          <div className="input-group">
             <input type="text" placeholder="Informe seu email" />
 
             <button>
@@ -44,10 +44,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <section class="buy-sell">
+        <section className="buy-sell">
           <h3>Comprar ou Vender</h3>
 
-          <div class="menu">
+          <div className="menu">
             <ul>
               <li>
                 <Link to="#">Loren ipsum</Link>
@@ -72,10 +72,10 @@ const Footer = () => {
           </div>
         </section>
 
-        <section class="about">
+        <section className="about">
           <h3>Sobre</h3>
 
-          <div class="menu">
+          <div className="menu">
             <ul>
               <li>
                 <Link to="#">Loren ipsum</Link>
@@ -100,10 +100,10 @@ const Footer = () => {
           </div>
         </section>
 
-        <section class="profile">
+        <section className="profile">
           <h3>Perfil</h3>
 
-          <div class="menu">
+          <div className="menu">
             <ul>
               <li>
                 <Link to="#">Loren ipsum</Link>
@@ -124,8 +124,8 @@ const Footer = () => {
           </div>
         </section>
 
-        <section class="contacts-social">
-          <div class="contacts">
+        <section className="contacts-social">
+          <div className="contacts">
             <a id="phone" href="fone:+551111111111">
               <img src={IconeTelefone} alt="icone telefone" />
               (11) 1111-1111
@@ -137,7 +137,7 @@ const Footer = () => {
             </a>
           </div>
 
-          <div class="social">
+          <div className="social">
             <a id="facebook" href="#">
               <img src={LogoFacebook} alt="logo facebook" />
             </a>
@@ -156,13 +156,13 @@ const Footer = () => {
           </div>
         </section>
       </div>
-      <div class="footer-bottom">
+      <div className="footer-bottom">
         <p>
           Copyright © Finder | Gama Academy. Todos os direitos reservados - Este
           é um projeto acadêmico.
         </p>
 
-        <div class="menu-secondary">
+        <div className="menu-secondary">
           <Link to="#">Termos de uso</Link>
           <Link to="#">Política de privacidade</Link>
         </div>

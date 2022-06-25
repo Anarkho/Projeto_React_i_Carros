@@ -16,22 +16,22 @@ import FamilyMvp from '@/assets/img/home/types/family.png'
 import { Container } from './styles'
 const Types = () => {
   return (
-    <Container class="types">
-      <div class="types-top">
+    <Container className="types">
+      <div className="types-top">
         <h2>Mais procurados</h2>
 
-        <div class="view-all">
+        <div className="view-all">
           <Link to="">
             <p>Ver todos</p>
           </Link>
           <Link to="">
-            <img class="arrow" src={Arrow} alt="arrow" />
+            <img className="arrow" src={Arrow} alt="arrow" />
           </Link>
         </div>
       </div>
 
-      <div class="car-lines">
-        <div class="cards-line1">
+      <div className="car-lines">
+        <div className="cards-line1">
           <Link to="">
             <img src={Sedan} alt="card sedan" />
             <p>Sedan</p>
@@ -58,7 +58,7 @@ const Types = () => {
           </Link>
         </div>
 
-        <div class="card-line2">
+        <div className="card-line2">
           <Link to="">
             <img src={Pickup} alt="card pickup" />
             <p>Pickup</p>

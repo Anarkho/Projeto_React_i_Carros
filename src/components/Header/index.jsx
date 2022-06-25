@@ -6,9 +6,9 @@ import OrangeCar from '@/assets/img/home/header/orange-car.png'
 export const Header = () => {
   return (
     <Container>
-      <section class="header">
-        <div class="text-img">
-          <div class="h1-p">
+      <section className="header">
+        <div className="text-img">
+          <div className="h1-p">
             <h1>Compre e venda com facilidade. </h1>
 
             <p>
@@ -20,12 +20,12 @@ export const Header = () => {
           <img id="orange-car" src={OrangeCar} alt="um carro laranja" />
         </div>
 
-        <div class="tabs">
+        <div className="tabs">
           <button id="new">Novo</button>
           <button id="used">Usado</button>
         </div>
 
-        <section class="input-group">
+        <section className="input-group">
           <form>
             <input type="text" id="search" placeholder="Pesquisar por ..." />
             <input type="text" id="make" placeholder="Marca" />

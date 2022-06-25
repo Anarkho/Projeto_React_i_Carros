@@ -9,38 +9,38 @@ import { Container } from './styles'
 const Banners = () => {
   return (
     <Container>
-      <section class="banner">
-        <div class="banner-top">
-          <div class="banner-top-right">
+      <section className="banner">
+        <div className="banner-top">
+          <div className="banner-top-right">
             <h2>Loren ipsun</h2>
             <p>Loren ipsun site amet</p>
             <button>Ir para loja</button>
           </div>
 
-          <div class="products">
+          <div className="products">
             <Link to="#">
               <img src={Bancos} alt="bancos" />
-              <p class="product-items">Bancos</p>
+              <p className="product-items">Bancos</p>
             </Link>
 
             <Link to="#">
               <img src={Pneus} alt="pneus" />
-              <p class="product-items">Pneus</p>
+              <p className="product-items">Pneus</p>
             </Link>
 
             <Link to="#">
               <img src={Rodas} alt="rodas" />
-              <p class="product-items">Rodas</p>
+              <p className="product-items">Rodas</p>
             </Link>
 
             <Link to="#">
               <img src={Acessorios} alt="acessorios" />
-              <p class="product-items">Acessorios</p>
+              <p className="product-items">Acessorios</p>
             </Link>
           </div>
         </div>
 
-        <div class="banner-bottom"></div>
+        <div className="banner-bottom"></div>
       </section>
     </Container>
   )

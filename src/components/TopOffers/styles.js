@@ -57,14 +57,32 @@ export const Container = styled.section`
       width: 45%;
       border-radius: 1.2rem;
 
-      img {
-        width: 100%;
-        height: 47.5%;
+      .carrosel {
+        display: flex;
+        overflow-y: hidden;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        height: 47%;
+        flex: none;
         border-radius: 1.2rem 1.2rem 0rem 0rem;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+
+        & img {
+          width: 100%;
+          height: 70vh;
+          border-radius: 1.2rem 1.2rem 0rem 0rem;
+          object-fit: contain;
+          margin-top: -130px;
+        }
       }
+
       .setas {
         width: 30px;
         height: 30px;
+        cursor: pointer;
 
         &:hover {
           border-radius: 15px;

@@ -10,12 +10,12 @@ import Next from '@/assets/img/home/apps/next.png'
 const BannerApp = () => {
   return (
     <Container>
-      <div class="container-app">
-        <div class="setas">
+      <div className="container-app">
+        <div className="setas">
           <img src={After} alt="anterior" width={30} height={30} />
           <img src={Next} alt="posterior" width={53} height={53} />
         </div>
-        <div class="apps">
+        <div className="apps">
           <div>
             <h2>Baixe o nosso app</h2>
           </div>
@@ -28,7 +28,7 @@ const BannerApp = () => {
             </p>
           </div>
 
-          <div class="btns">
+          <div className="btns">
             <a
               id="app-store"
               href="https://www.apple.com/br/app-store/"
@@ -43,7 +43,7 @@ const BannerApp = () => {
           </div>
         </div>
 
-        <div class="ilustration">
+        <div className="ilustration">
           <img src={Ilustration} alt="" />
         </div>
       </div>

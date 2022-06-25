@@ -14,9 +14,9 @@ import { Container } from './styles'
 const Features = () => {
   return (
     <Container>
-      <div class="top-info">
+      <div className="top-info">
         <h2>O que temos de diferente</h2>
-        <div class="pesquisa-vender">
+        <div className="pesquisa-vender">
           <span>Como vender carros no Finder</span>
           <Link to="#">
             <img src={Seta} alt="seta" width={15} />
@@ -24,10 +24,10 @@ const Features = () => {
         </div>
       </div>
 
-      <div class="features-container">
-        <div class="features-column-left">
-          <div class="feature-left">
-            <div class="title-left">
+      <div className="features-container">
+        <div className="features-column-left">
+          <div className="feature-left">
+            <div className="title-left">
               <h3>Loren ipsun</h3>
               <img src={File} alt="file" />
             </div>
@@ -38,8 +38,8 @@ const Features = () => {
             </p>
           </div>
 
-          <div class="feature-left">
-            <div class="title-left">
+          <div className="feature-left">
+            <div className="title-left">
               <h3>Loren ipsun</h3>
               <img src={Search} alt="search" />
             </div>
@@ -49,8 +49,8 @@ const Features = () => {
             </p>
           </div>
 
-          <div class="feature-left">
-            <div class="title-left">
+          <div className="feature-left">
+            <div className="title-left">
               <h3>Loren ipsun</h3>
               <img src={Settings} alt="settings" />
             </div>
@@ -62,14 +62,14 @@ const Features = () => {
           </div>
         </div>
 
-        <div class="auto-road">
+        <div className="auto-road">
           <img src={Auto} alt="auto" />
           <img src={Roadline} alt="roadline" />
         </div>
 
-        <div class="features-column-right">
-          <div class="feature-right">
-            <div class="title-right">
+        <div className="features-column-right">
+          <div className="feature-right">
+            <div className="title-right">
               <img src={Info} alt="info" />
               <h3>Loren ipsun</h3>
             </div>
@@ -80,8 +80,8 @@ const Features = () => {
             </p>
           </div>
 
-          <div class="feature-right">
-            <div class="title-right">
+          <div className="feature-right">
+            <div className="title-right">
               <img src={User} alt="user" />
               <h3>Loren ipsun</h3>
             </div>
@@ -92,8 +92,8 @@ const Features = () => {
             </p>
           </div>
 
-          <div class="feature-right">
-            <div class="title-right">
+          <div className="feature-right">
+            <div className="title-right">
               <img src={Calculator} alt="calculator" />
               <h3>Loren ipsun</h3>
             </div>
