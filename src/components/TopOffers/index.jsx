@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { Container } from './styles'
 import Arrow from '@/assets/img/home/types/arrow.svg'
-import { mercedes } from '../../assets/img/home/top-offers/automoveis'
+import { mercedes, raptor } from '../../assets/img/home/top-offers/automoveis'
 import GreenCar from '@/assets/img/home/top-offers/green-car.png'
 import BlueCar from '@/assets/img/home/top-offers/blue-car.png'
 import Dashboard from '@/assets/img/home/top-offers/dashboard.svg'
@@ -13,11 +13,17 @@ import After from '@/assets/img/home/apps/previous.png'
 
 const TopOffers = () => {
   const [carWhite, setCarWhite] = useState([])
+  const [carBrown, setCarBrown] = useState([])
   const carrosel = useRef(null)
+  const carroselRightUp = useRef(null)
 
   useEffect(() => {
     setCarWhite(mercedes)
   }, [carWhite.length > 0])
+
+  useEffect(() => {
+    setCarBrown(raptor)
+  }, [carBrown.length > 0])
 
   const handleLeftClick = (e) => {
     e.preventDefault()
@@ -27,6 +33,16 @@ const TopOffers = () => {
   const handleRightClick = (e) => {
     e.preventDefault()
     carrosel.current.scrollLeft += carrosel.current.offsetWidth
+  }
+
+  const handleLeftClick2 = (e) => {
+    e.preventDefault()
+    carroselRightUp.current.scrollLeft -= carroselRightUp.current.offsetWidth
+  }
+
+  const handleRightClick2 = (e) => {
+    e.preventDefault()
+    carroselRightUp.current.scrollLeft += carroselRightUp.current.offsetWidth
   }
 
   if (!carWhite || !carWhite.length) return null
@@ -55,7 +71,7 @@ const TopOffers = () => {
             src={After}
             alt="seta direita"
           />
-          <div className="carrosel" ref={carrosel}>
+          <div className="carrosel-left" ref={carrosel}>
             {carWhite.map((item, index) => {
               return <img key={index} src={item} alt="white car" />
             })}
@@ -97,7 +113,24 @@ const TopOffers = () => {
         </div>
         <div className="card-right-vertical">
           <div className="card-right-up">
-            <img src={GreenCar} alt="green car" />
+            <img
+              onClick={handleLeftClick2}
+              className="setas2"
+              src={After}
+              alt="seta esquerda"
+            />
+            <img
+              onClick={handleRightClick2}
+              className="setas2"
+              src={After}
+              alt="seta direita"
+            />
+            <div className="carrosel-right-up" ref={carroselRightUp}>
+              {carBrown.map((item, index) => {
+                return <img key={index} src={item} alt="brown car" />
+              })}
+            </div>
+
             <div className="card-right-up-infos">
               <div className="ano-compare">
                 <p>1995</p>
@@ -108,7 +141,7 @@ const TopOffers = () => {
                 </label>
               </div>
               <div className="especification">
-                <h3>Ford Truck Lifted</h3>
+                <h3>F-250R</h3>
                 <p className="price">$24,000</p>
                 <div className="location">
                   <img src={Pin} alt="ponteiro" />
