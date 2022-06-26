@@ -96,6 +96,7 @@ const TopOffers = () => {
             alt="seta direita"
           />
           <div className="carrosel-left" ref={carrosel}>
+            <p className="p-left">Usado</p>
             {carWhite.map((item, index) => {
               return (
                 <img
@@ -157,6 +158,7 @@ const TopOffers = () => {
               alt="seta direita"
             />
             <div className="carrosel-right-up" ref={carroselRightUp}>
+              <p className="p-right-up">Usado</p>
               <img className="core" src={Core} alt="curtida" />
               {carBrown.map((item, index) => {
                 return (
@@ -218,6 +220,7 @@ const TopOffers = () => {
               alt="seta direita"
             />
             <div className="carrosel-right-down" ref={carroselRightDown}>
+              <p className="p-right-down">Novo</p>
               <img className="core" src={Core} alt="curtida" />
               {carGray.map((item, index) => {
                 return (

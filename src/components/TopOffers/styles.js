@@ -72,6 +72,20 @@ export const Container = styled.section`
           display: none;
         }
 
+        .p-left {
+          position: absolute;
+          left: 0;
+          width: 60px;
+          text-align: center;
+          background-color: #3a7af5;
+          color: white;
+          padding: 5px;
+          border-radius: 8px;
+          margin-left: 12%;
+          margin-top: 10px;
+          font-weight: 300;
+        }
+
         & img {
           width: 100%;
           height: 70vh;
@@ -266,6 +280,19 @@ export const Container = styled.section`
         0px 4px 16px rgba(31, 27, 45, 0.12);
       border-radius: 1.2rem;
 
+      .p-right-up {
+        position: absolute;
+        right: 0;
+        background-color: #3a7af5;
+        color: white;
+        padding: 5px;
+        border-radius: 8px;
+        margin-right: 47%;
+        margin-top: 10px;
+        font-weight: 300;
+        font-size: 0.8rem;
+      }
+
       .carrosel-right-up {
         display: flex;
         overflow-y: hidden;
@@ -287,6 +314,7 @@ export const Container = styled.section`
           height: 20px;
           padding: 5px;
           z-index: 2;
+          margin-top: 8px;
           margin-right: 35%;
           border-radius: 0;
           background-color: #fefcff;
@@ -484,6 +512,21 @@ export const Container = styled.section`
         0px 4px 16px rgba(31, 27, 45, 0.12);
       border-radius: 1.2rem;
 
+      .p-right-down {
+        position: absolute;
+        right: 0;
+        width: 40px;
+        text-align: center;
+        background-color: #ffbf2c;
+        color: white;
+        padding: 5px;
+        border-radius: 8px;
+        margin-right: 47%;
+        margin-top: 10px;
+        font-weight: 300;
+        font-size: 0.8rem;
+      }
+
       .carrosel-right-down {
         display: flex;
         overflow-y: hidden;
@@ -501,6 +544,7 @@ export const Container = styled.section`
           height: 20px;
           padding: 5px;
           z-index: 2;
+          margin-top: 8px;
           margin-right: 35%;
           border-radius: 0;
           background-color: #fefcff;
