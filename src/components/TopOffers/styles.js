@@ -310,10 +310,6 @@ export const Container = styled.section`
           float: right;
         }
       }
-      img {
-        height: 100%;
-        border-radius: 0rem 0rem 0rem 0rem;
-      }
       .card-right-up-infos {
         height: 100%;
         width: 100%;
@@ -468,9 +464,51 @@ export const Container = styled.section`
         0px 4px 16px rgba(31, 27, 45, 0.12);
       border-radius: 1.2rem;
 
-      img {
+      .carrosel-right-down {
+        display: flex;
+        overflow-y: hidden;
+        overflow-x: auto;
+        scroll-behavior: smooth;
         height: 100%;
+        width: 40%;
+        flex: none;
         border-radius: 1.2rem 0rem 0rem 1.2rem;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+
+        & img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 1.2rem 0rem 0rem 1.2rem;
+        }
+      }
+
+      .setas3 {
+        width: 20px;
+        height: 20px;
+
+        &:hover {
+          border-radius: 15px;
+          background-color: #fd5631;
+        }
+        &:nth-child(1) {
+          position: absolute;
+          right: 0;
+          margin-top: 7%;
+          margin-right: 50%;
+          float: right;
+        }
+        &:nth-child(2) {
+          position: absolute;
+          right: 0;
+          margin-top: 7%;
+          margin-right: 35%;
+          transform: rotate(180deg);
+          float: right;
+        }
       }
       .card-right-down-infos {
         height: 100%;

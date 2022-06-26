@@ -1,8 +1,11 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { Container } from './styles'
 import Arrow from '@/assets/img/home/types/arrow.svg'
-import { mercedes, raptor } from '../../assets/img/home/top-offers/automoveis'
-import GreenCar from '@/assets/img/home/top-offers/green-car.png'
+import {
+  mercedes,
+  raptor,
+  c300,
+} from '../../assets/img/home/top-offers/automoveis'
 import BlueCar from '@/assets/img/home/top-offers/blue-car.png'
 import Dashboard from '@/assets/img/home/top-offers/dashboard.svg'
 import Transmission from '@/assets/img/home/top-offers/transmission.svg'
@@ -14,8 +17,10 @@ import After from '@/assets/img/home/apps/previous.png'
 const TopOffers = () => {
   const [carWhite, setCarWhite] = useState([])
   const [carBrown, setCarBrown] = useState([])
+  const [carGray, setCarGray] = useState([])
   const carrosel = useRef(null)
   const carroselRightUp = useRef(null)
+  const carroselRightDown = useRef(null)
 
   useEffect(() => {
     setCarWhite(mercedes)
@@ -24,6 +29,10 @@ const TopOffers = () => {
   useEffect(() => {
     setCarBrown(raptor)
   }, [carBrown.length > 0])
+
+  useEffect(() => {
+    setCarGray(c300)
+  }, [carGray.length > 0])
 
   const handleLeftClick = (e) => {
     e.preventDefault()
@@ -45,7 +54,21 @@ const TopOffers = () => {
     carroselRightUp.current.scrollLeft += carroselRightUp.current.offsetWidth
   }
 
+  const handleLeftClick3 = (e) => {
+    e.preventDefault()
+    carroselRightDown.current.scrollLeft -=
+      carroselRightDown.current.offsetWidth
+  }
+
+  const handleRightClick3 = (e) => {
+    e.preventDefault()
+    carroselRightDown.current.scrollLeft +=
+      carroselRightDown.current.offsetWidth
+  }
+
   if (!carWhite || !carWhite.length) return null
+  if (!carBrown || !carBrown.length) return null
+  if (!carGray || !carGray.length) return null
 
   return (
     <Container>
@@ -79,7 +102,7 @@ const TopOffers = () => {
 
           <div className="card-left-down-infos">
             <div className="ano-compare">
-              <p>1994</p>
+              <p>2018</p>
               <label className="check">
                 <p>Compare</p>
                 <input type="checkbox" />
@@ -133,7 +156,7 @@ const TopOffers = () => {
 
             <div className="card-right-up-infos">
               <div className="ano-compare">
-                <p>1995</p>
+                <p>2019</p>
                 <label className="check">
                   <p>Compare</p>
                   <input type="checkbox" />
@@ -166,10 +189,26 @@ const TopOffers = () => {
             </div>
           </div>
           <div className="card-right-down">
-            <img src={BlueCar} alt=" blue car" />
+            <img
+              onClick={handleLeftClick3}
+              className="setas3"
+              src={After}
+              alt="seta esquerda"
+            />
+            <img
+              onClick={handleRightClick3}
+              className="setas3"
+              src={After}
+              alt="seta direita"
+            />
+            <div className="carrosel-right-down" ref={carroselRightDown}>
+              {carGray.map((item, index) => {
+                return <img key={index} src={item} alt="gray car" />
+              })}
+            </div>
             <div className="card-right-down-infos">
               <div className="ano-compare">
-                <p>2020</p>
+                <p>2021</p>
                 <label className="check">
                   <p>Compare</p>
                   <input type="checkbox" />
@@ -177,7 +216,7 @@ const TopOffers = () => {
                 </label>
               </div>
               <div className="especification">
-                <h3>Mercedes Benz C300 Sport</h3>
+                <h3>Mercedes Classe C</h3>
                 <p className="price">$54,420</p>
                 <div className="location">
                   <img src={Pin} alt="ponteiro" />
