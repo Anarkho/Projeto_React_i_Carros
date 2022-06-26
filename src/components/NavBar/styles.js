@@ -5,7 +5,6 @@ export const Container = styled.nav`
   height: 10vh;
   width: inherit;
   align-items: center;
-  background-color: #1f1b2d;
   font-size: 0.8rem;
 
   .link-logo {

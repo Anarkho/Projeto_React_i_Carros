@@ -5,6 +5,14 @@ export const Container = styled.header`
   height: 40.3rem;
   justify-content: space-between;
 
+  .shape {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 110%;
+  }
+
   & .text-img {
     width: inherit;
     margin-top: 7rem;

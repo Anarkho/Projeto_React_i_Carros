@@ -2,11 +2,13 @@ import React from 'react'
 import { Container } from './styles'
 
 import OrangeCar from '@/assets/img/home/header/orange-car.png'
+import Shape from '@/assets/img/home/header/shape.png'
 
 export const Header = () => {
   return (
     <Container>
       <section className="header">
+        <img className="shape" src={Shape} />
         <div className="text-img">
           <div className="h1-p">
             <h1>Compre e venda com facilidade. </h1>
