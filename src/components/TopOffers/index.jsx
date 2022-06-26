@@ -7,7 +7,6 @@ import {
   raptor,
   c300,
 } from '../../assets/img/home/top-offers/automoveis'
-import BlueCar from '@/assets/img/home/top-offers/blue-car.png'
 import Dashboard from '@/assets/img/home/top-offers/dashboard.svg'
 import Transmission from '@/assets/img/home/top-offers/transmission.svg'
 import Fuel from '@/assets/img/home/top-offers/fuel.svg'
@@ -158,6 +157,7 @@ const TopOffers = () => {
               alt="seta direita"
             />
             <div className="carrosel-right-up" ref={carroselRightUp}>
+              <img className="core" src={Core} alt="curtida" />
               {carBrown.map((item, index) => {
                 return (
                   <img
@@ -218,6 +218,7 @@ const TopOffers = () => {
               alt="seta direita"
             />
             <div className="carrosel-right-down" ref={carroselRightDown}>
+              <img className="core" src={Core} alt="curtida" />
               {carGray.map((item, index) => {
                 return (
                   <img

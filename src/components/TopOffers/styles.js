@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import CoreSelected from '@/assets/img/home/top-offers/core_select.svg'
+
 export const Container = styled.section`
   margin-bottom: 20px;
   width: inherit;
@@ -278,6 +280,24 @@ export const Container = styled.section`
           display: none;
         }
 
+        .core {
+          position: absolute;
+          right: 0;
+          width: 20px;
+          height: 20px;
+          padding: 5px;
+          z-index: 2;
+          margin-right: 35%;
+          border-radius: 0;
+          background-color: #fefcff;
+          border-radius: 20px;
+
+          &:hover {
+            background-color: #fd5631;
+            opacity: 0.8;
+          }
+        }
+
         & img {
           width: 100%;
           height: 100%;
@@ -473,6 +493,24 @@ export const Container = styled.section`
         width: 40%;
         flex: none;
         border-radius: 1.2rem 0rem 0rem 1.2rem;
+
+        .core {
+          position: absolute;
+          right: 0;
+          width: 20px;
+          height: 20px;
+          padding: 5px;
+          z-index: 2;
+          margin-right: 35%;
+          border-radius: 0;
+          background-color: #fefcff;
+          border-radius: 20px;
+
+          &:hover {
+            background-color: #fd5631;
+            opacity: 0.8;
+          }
+        }
 
         &::-webkit-scrollbar {
           display: none;
