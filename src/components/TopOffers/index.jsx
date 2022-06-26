@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { Container } from './styles'
+import { useNavigate } from 'react-router'
 import Arrow from '@/assets/img/home/types/arrow.svg'
 import {
   mercedes,
@@ -15,6 +16,7 @@ import Pin from '@/assets/img/home/footer/pin.svg'
 import After from '@/assets/img/home/apps/previous.png'
 
 const TopOffers = () => {
+  const navigate = useNavigate()
   const [carWhite, setCarWhite] = useState([])
   const [carBrown, setCarBrown] = useState([])
   const [carGray, setCarGray] = useState([])
@@ -74,7 +76,7 @@ const TopOffers = () => {
     <Container>
       <div className="top-offers-top">
         <h2>Ofertas</h2>
-        <div className="view-all">
+        <div onClick={() => navigate('/catalog')} className="view-all">
           <p>Veja todas as ofertas</p>
           <img className="arrow" src={Arrow} alt="arrow" />
         </div>
@@ -96,7 +98,14 @@ const TopOffers = () => {
           />
           <div className="carrosel-left" ref={carrosel}>
             {carWhite.map((item, index) => {
-              return <img key={index} src={item} alt="white car" />
+              return (
+                <img
+                  onClick={() => navigate('/item')}
+                  key={index}
+                  src={item}
+                  alt="white car"
+                />
+              )
             })}
           </div>
 
@@ -150,7 +159,14 @@ const TopOffers = () => {
             />
             <div className="carrosel-right-up" ref={carroselRightUp}>
               {carBrown.map((item, index) => {
-                return <img key={index} src={item} alt="brown car" />
+                return (
+                  <img
+                    onClick={() => navigate('/item')}
+                    key={index}
+                    src={item}
+                    alt="brown car"
+                  />
+                )
               })}
             </div>
 
@@ -203,7 +219,14 @@ const TopOffers = () => {
             />
             <div className="carrosel-right-down" ref={carroselRightDown}>
               {carGray.map((item, index) => {
-                return <img key={index} src={item} alt="gray car" />
+                return (
+                  <img
+                    onClick={() => navigate('/item')}
+                    key={index}
+                    src={item}
+                    alt="gray car"
+                  />
+                )
               })}
             </div>
             <div className="card-right-down-infos">
