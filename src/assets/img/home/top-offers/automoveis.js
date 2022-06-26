@@ -10,7 +10,7 @@ export const raptor = [
 ]
 
 export const c300 = [
-  '/img/car_gray/c300.jpg',
-  '/img/car_gray/c3002.jpg',
-  '/img/car_gray/c3003.jpg',
+  'https://github.com/Anarkho/Projeto_React_i_Carros/blob/main/public/img/car_gray/c300.jpg?raw=true',
+  'https://github.com/Anarkho/Projeto_React_i_Carros/blob/main/public/img/car_gray/c3002.jpg?raw=true',
+  'https://github.com/Anarkho/Projeto_React_i_Carros/blob/main/public/img/car_gray/c3003.jpg?raw=true',
 ]
