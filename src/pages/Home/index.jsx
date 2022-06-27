@@ -13,6 +13,7 @@ import Features from '@/components/Features'
 import Banners from '@/components/Banners'
 import BannerApp from '@/components/BannerApp'
 import Blog from '@/components/Blog'
+import LastPublication from '@/components/LastPublication'
 
 const Home = () => {
   return (
@@ -24,6 +25,7 @@ const Home = () => {
         <TopOffers />
         <Brands />
         <Features />
+        <LastPublication title="Ultimos publicados" />
         <Banners />
         <BannerApp />
         <Blog />
