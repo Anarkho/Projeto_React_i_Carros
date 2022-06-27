@@ -4,11 +4,11 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 350px;
-  height: 410px;
+  height: 440px;
   border-radius: 1.2rem;
   background-color: #282435;
-  margin: 0px 5px;
-
+  margin: 0px 8px;
+  margin-top: -30px;
   img {
     border-radius: 1.2rem 1.2rem 0rem 0rem;
   }
@@ -153,8 +153,7 @@ export const Container = styled.div`
   }
 `
 export const Use = styled.p`
-  position: absolute;
-  margin-top: 10px;
+  position: relative;
   margin-left: 20px;
   background-color: ${(props) => props.bgColor};
   padding: 5px;
@@ -163,4 +162,6 @@ export const Use = styled.p`
   font-weight: 300;
   width: 50px;
   text-align: center;
+  z-index: 0;
+  top: 40px;
 `

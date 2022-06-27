@@ -63,12 +63,44 @@ export const Container = styled.section`
       font-weight: 300;
     }
   }
+  .setas-left {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    margin-top: 19%;
+    margin-left: 8%;
+
+    &:hover {
+      border-radius: 15px;
+      background-color: #fd5631;
+    }
+  }
+  .setas-rigth {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    margin-top: 19%;
+    margin-right: 6.5%;
+    transform: rotate(180deg);
+
+    &:hover {
+      border-radius: 15px;
+      background-color: #fd5631;
+    }
+  }
   .cards {
     display: flex;
     justify-content: space-between;
-    border: solid 1px red;
     max-width: 100vw;
     flex: none;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
   .status-carrosel {
     text-align: center;
