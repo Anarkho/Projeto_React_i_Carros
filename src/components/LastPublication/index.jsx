@@ -10,7 +10,7 @@ import Nissan from '@/assets/img/home/latest-cars/nissan.png'
 import Bmw from '@/assets/img/home/latest-cars/bmw.png'
 import After from '@/assets/img/home/apps/previous.png'
 
-const LastPublication = ({ title }) => {
+const LastPublication = ({ title, enabled = false }) => {
   const carrosel = useRef(null)
 
   const handleLeftClick = (e) => {
@@ -26,15 +26,17 @@ const LastPublication = ({ title }) => {
     <Container>
       <div className="top-info">
         <h2>{title}</h2>
-        <div className="top-info-right">
-          <p className="novo">Novo</p>
-          <p className="usado">Usado</p>
+        {enabled && (
+          <div className="top-info-right">
+            <p className="novo">Novo</p>
+            <p className="usado">Usado</p>
 
-          <Link to="/catalog">
-            <span>Ver todos</span>
-            <img src={Seta} alt="seta" width={15} />
-          </Link>
-        </div>
+            <Link to="/catalog">
+              <span>Ver todos</span>
+              <img src={Seta} alt="seta" width={15} />
+            </Link>
+          </div>
+        )}
       </div>
       <img
         onClick={handleLeftClick}

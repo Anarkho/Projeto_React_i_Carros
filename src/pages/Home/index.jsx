@@ -25,7 +25,7 @@ const Home = () => {
         <TopOffers />
         <Brands />
         <Features />
-        <LastPublication title="Ultimos publicados" />
+        <LastPublication title="Ultimos publicados" enabled={true} />
         <Banners />
         <BannerApp />
         <Blog />
