@@ -8,6 +8,7 @@ const Catalog = () => {
   return (
     <Container>
       <NavBar />
+      <main></main>
       <Footer />
     </Container>
   )
