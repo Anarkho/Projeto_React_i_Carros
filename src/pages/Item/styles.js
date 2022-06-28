@@ -182,6 +182,7 @@ export const Container = styled.div`
           p {
             color: #ccc;
             font-weight: 300;
+            font-size: 0.9rem;
           }
           .p-bold {
             margin-left: 5px;
