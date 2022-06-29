@@ -19,6 +19,10 @@ const GlobalStyle = createGlobalStyle`
     main{
       width: 80vw;
     }
+
+    #modal-root{
+      display: none;
+    }
   }
 `
 
