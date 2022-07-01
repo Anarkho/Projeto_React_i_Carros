@@ -26,17 +26,20 @@ import { mercedes } from '../../assets/img/home/top-offers/automoveis'
 const Item = () => {
   const carrosel = useRef(null)
   const [carWhite, setCarWhite] = useState([])
+  const [caminho, setCaminho] = useState()
 
   useEffect(() => {
     setCarWhite(mercedes)
   }, [carWhite.length > 0])
 
   const handleLeftClick = (e) => {
+    setCaminho('')
     e.preventDefault()
     carrosel.current.scrollLeft -= carrosel.current.offsetWidth
   }
 
   const handleRightClick = (e) => {
+    setCaminho('')
     e.preventDefault()
     carrosel.current.scrollLeft += carrosel.current.offsetWidth
   }
@@ -74,7 +77,7 @@ const Item = () => {
                   <img
                     className="img-principal"
                     key={index}
-                    src={item}
+                    src={caminho || item}
                     alt="white car"
                   />
                 )
@@ -82,7 +85,11 @@ const Item = () => {
             </div>
             <div className="mini-imagens">
               {mercedes.map((item) => (
-                <img src={item} alt="miniatura carros" />
+                <img
+                  onClick={() => setCaminho(item)}
+                  src={item}
+                  alt="miniatura carros"
+                />
               ))}
               <img src={Video} alt="video demostrativo" />
             </div>
