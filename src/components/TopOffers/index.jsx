@@ -120,7 +120,7 @@ const TopOffers = () => {
             </div>
             <div className="especification">
               <h3>Mercedes-Benz Classe S</h3>
-              <p className="price">$25,880</p>
+              <p className="price">$60,990</p>
               <div className="location">
                 <img src={Pin} alt="ponteiro" />
                 <p>São paulo</p>
